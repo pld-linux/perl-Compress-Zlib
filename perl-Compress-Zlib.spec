@@ -7,12 +7,12 @@ Summary(pl):	Modu³ perla Compress::Zlib
 Summary(pt_BR):	Modulo Perl Compress::Zlib
 Name:		perl-Compress-Zlib
 Version:	1.19
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -28,7 +28,8 @@ Compress::Zlib - interfejs do biblioteki zlib.
 %patch -p1
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
@@ -45,10 +46,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README ANNOUNCE
-%{perl_sitearch}/Compress/Zlib.pm
-%dir %{perl_sitearch}/auto/Compress/Zlib
-%{perl_sitearch}/auto/Compress/Zlib/Zlib.bs
-%{perl_sitearch}/auto/Compress/Zlib/autosplit.ix
-%attr(755,root,root) %{perl_sitearch}/auto/Compress/Zlib/Zlib.so
+%{perl_vendorarch}/Compress/Zlib.pm
+%dir %{perl_vendorarch}/auto/Compress/Zlib
+%{perl_vendorarch}/auto/Compress/Zlib/Zlib.bs
+%{perl_vendorarch}/auto/Compress/Zlib/autosplit.ix
+%attr(755,root,root) %{perl_vendorarch}/auto/Compress/Zlib/Zlib.so
 %{_mandir}/man3/*
 %{_examplesdir}/%{name}-%{version}
