@@ -4,7 +4,7 @@
 Summary:	Compress::Zlib perl module
 Summary(pl):	Modu³ perla Compress::Zlib
 Name:		perl-Compress-Zlib
-Version:	1.16
+Version:	1.19
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
