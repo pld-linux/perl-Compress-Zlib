@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Compress
 %define	pnam	Zlib
-%include	/usr/lib/rpm/macros.perl
 Summary:	Compress-Zlib perl module
 Summary(pl):	Modu³ perla Compress-Zlib
 Name:		perl-Compress-Zlib
 Version:	1.14
-Release:	2
-
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,7 +22,7 @@ Compress-Zlib - Interface to zlib library.
 Compress-Zlib - interfejs do biblioteki zlib.
 
 %prep
-%setup -q -n Compress-Zlib-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 %patch -p1
 
 %build
