@@ -22,13 +22,13 @@ Summary(tr):	Compress::Zlib - zlib s齥t齬ma kitapl齨a Perl aray鼁ler sa餷aya
 Summary(zh_CN):	Compress::Zlib - 提供到 zlib 压缩库的 Perl 界面的模块。
 Summary(zh_TW):	Compress::Zlib - 矗ㄑ Perl ざ倒 zlib 溃罽ㄧΑ畐家舱
 Name:		perl-Compress-Zlib
-Version:	1.32
+Version:	1.33
 Release:	1
 # same as perl
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	ad5f9ef1e334e65815ebabdb8061911b
+# Source0-md5:	927814da77b31b5a9ace821eb3ece5fd
 Patch0:		%{name}-paths.patch
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.8.0
@@ -186,10 +186,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README ANNOUNCE
-%{perl_vendorarch}/Compress/Zlib.pm
-%dir %{perl_vendorarch}/auto/Compress/Zlib
-%{perl_vendorarch}/auto/Compress/Zlib/Zlib.bs
-%{perl_vendorarch}/auto/Compress/Zlib/autosplit.ix
-%attr(755,root,root) %{perl_vendorarch}/auto/Compress/Zlib/Zlib.so
+%{perl_vendorarch}/%{pdir}/%{pnam}.pm
+%dir %{perl_vendorarch}/auto/%{pdir}/%{pnam}
+%{perl_vendorarch}/auto/%{pdir}/%{pnam}/%{pnam}.bs
+%{perl_vendorarch}/auto/%{pdir}/%{pnam}/autosplit.ix
+%attr(755,root,root) %{perl_vendorarch}/auto/%{pdir}/%{pnam}/%{pnam}.so
 %{_mandir}/man3/*
 %{_examplesdir}/%{name}-%{version}
