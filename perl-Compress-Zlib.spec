@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Compress
-%define	pnam	Zlib
+%define		pdir	Compress
+%define		pnam	Zlib
 Summary:	Compress::Zlib - interface to zlib library
 Summary(cs):	Compress::Zlib - modul poskytující rozhraní Perlu ke komprimaèní knihovnì zlib
 Summary(da):	Compress::Zlib - et modul som giver Perl en grænseflade til komprimeringsbiblioteket zlib
