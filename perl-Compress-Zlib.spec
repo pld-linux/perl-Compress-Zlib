@@ -2,7 +2,9 @@
 %define	pdir	Compress
 %define	pnam	Zlib
 Summary:	Compress::Zlib perl module
+Summary(es):	Modulo Perl Compress::Zlib
 Summary(pl):	Modu³ perla Compress::Zlib
+Summary(pt_BR):	Modulo Perl Compress::Zlib
 Name:		perl-Compress-Zlib
 Version:	1.19
 Release:	1
