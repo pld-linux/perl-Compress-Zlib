@@ -3,7 +3,7 @@ Summary:	Compress-Zlib perl module
 Summary(pl):	Modu³ perla Compress-Zlib
 Name:		perl-Compress-Zlib
 Version:	1.08
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -11,7 +11,7 @@ Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Compress/Compress-Zlib-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
-BuildRequires:	perl >= 5.005_03-14
+BuildRequires:	perl >= 5.6
 BuildRequires:	zlib-devel
 %requires_eq	perl
 Requires:	%{perl_sitearch}
@@ -33,11 +33,11 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-install examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}
+install examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 gzip -9nf README ANNOUNCE
 
@@ -52,7 +52,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_sitearch}/auto/Compress/Zlib/Zlib.bs
 %{perl_sitearch}/auto/Compress/Zlib/autosplit.ix
 %attr(755,root,root) %{perl_sitearch}/auto/Compress/Zlib/Zlib.so
-
 %{_mandir}/man3/*
-
-%{_examplesdir}/%{name}
+%{_examplesdir}/%{name}-%{version}
