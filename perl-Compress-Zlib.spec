@@ -7,7 +7,7 @@ Summary(pl):	Modu³ perla Compress::Zlib
 Summary(pt_BR):	Modulo Perl Compress::Zlib
 Name:		perl-Compress-Zlib
 Version:	1.19
-Release:	2
+Release:	2.1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -31,6 +31,7 @@ Compress::Zlib - interfejs do biblioteki zlib.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
+rm examples/*.orig*
 
 %install
 rm -rf $RPM_BUILD_ROOT
