@@ -22,12 +22,12 @@ Summary(tr):	Compress::Zlib - zlib s齥t齬ma kitapl齨a Perl aray鼁ler sa餷aya
 Summary(zh_CN):	Compress::Zlib - 提供到 zlib 压缩库的 Perl 界面的模块。
 Summary(zh_TW):	Compress::Zlib - 矗ㄑ Perl ざ倒 zlib 溃罽ㄧΑ畐家舱
 Name:		perl-Compress-Zlib
-Version:	1.22
+Version:	1.31
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	5ec5fcc19a854c80fc706417807fb6db
+# Source0-md5:	519296e08117092fdc24fc27a2ba30b4
 Patch0:		%{name}-paths.patch
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.8.0
