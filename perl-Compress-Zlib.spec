@@ -111,7 +111,7 @@ Modu³ Compress::Zlib stanowi interfejs Perla do biblioteki zlib.
 Wiêkszo¶æ funkcji biblioteki zlib jest dostêpna poprzez
 Compress::Zlib.
 
-Modu³ mo¿na podzieliæ funkcjonalnie na dwie zasadnicze cz±¶ci: do
+Modu³ mo¿na podzieliæ funkcjonalnie na dwie zasadnicze czê¶ci: do
 kompresji/dekompresji w pamiêci oraz do dostêpu (odczyt i zapis) do
 plików skompresowanych gzipem.
 
