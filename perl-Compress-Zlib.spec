@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Compress
 %define	pnam	Zlib
-Summary:	Compress-Zlib perl module
-Summary(pl):	Modu³ perla Compress-Zlib
+Summary:	Compress::Zlib perl module
+Summary(pl):	Modu³ perla Compress::Zlib
 Name:		perl-Compress-Zlib
 Version:	1.16
 Release:	1
@@ -16,10 +16,10 @@ BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Compress-Zlib - Interface to zlib library.
+Compress::Zlib - Interface to zlib library.
 
 %description -l pl
-Compress-Zlib - interfejs do biblioteki zlib.
+Compress::Zlib - interfejs do biblioteki zlib.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
