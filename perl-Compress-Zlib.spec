@@ -163,7 +163,7 @@ Compress::Zlib 模組為 zlib 壓縮函式庫提供一個 Perl 的介面。 由 zlib
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 rm -f examples/*.orig*
 
