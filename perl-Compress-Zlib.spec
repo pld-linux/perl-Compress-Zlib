@@ -1,13 +1,15 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Compress
 %define	pnam	Zlib
-Summary:	Compress::Zlib perl module
-Summary(es):	Modulo Perl Compress::Zlib
-Summary(pl):	Modu³ perla Compress::Zlib
-Summary(pt_BR):	Modulo Perl Compress::Zlib
+Summary:	Compress::Zlib - interface to zlib library
+Summary(pl):	Compress::Zlib - interfejs do biblioteki zlib.
 Name:		perl-Compress-Zlib
-Version:	1.19
-Release:	3
+Version:	1.20
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -18,10 +20,22 @@ BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Compress::Zlib - Interface to zlib library.
+The Compress::Zlib module provides a Perl interface to the zlib
+compression library. Most of the functionality provided by zlib is
+available in Compress::Zlib.
+
+The module can be split into two general areas of functionality,
+namely in-memory compression/decompression and read/write access to
+gzip files.
 
 %description -l pl
-Compress::Zlib - interfejs do biblioteki zlib.
+Modu³ Compress::Zlib stanowi interfejs Perla do biblioteki zlib.
+Wiêkszo¶æ funkcji biblioteki zlib jest dostêpna poprzez
+Compress::Zlib.
+
+Modu³ mo¿na podzieliæ funkcjonalnie na dwie zasadnicze cz±¶ci: do
+kompresji/dekompresji w pamiêci oraz do dostêpu (odczyt i zapis) do
+plików skompresowanych gzipem.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -31,6 +45,8 @@ Compress::Zlib - interfejs do biblioteki zlib.
 %{__perl} Makefile.PL
 %{__make} OPTIMIZE="%{rpmcflags}"
 rm -f examples/*.orig*
+
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
