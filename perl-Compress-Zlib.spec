@@ -39,14 +39,12 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 install examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-gzip -9nf README ANNOUNCE
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README ANNOUNCE
 %{perl_sitearch}/Compress/Zlib.pm
 %dir %{perl_sitearch}/auto/Compress/Zlib
 %{perl_sitearch}/auto/Compress/Zlib/Zlib.bs
