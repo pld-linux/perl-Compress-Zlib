@@ -23,7 +23,7 @@ Summary(zh_CN):	Compress::Zlib - 提供到 zlib 压缩库的 Perl 界面的模块。
 Summary(zh_TW):	Compress::Zlib - 矗ㄑ Perl ざ倒 zlib 溃罽ㄧΑ畐家舱
 Name:		perl-Compress-Zlib
 Version:	1.33
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
