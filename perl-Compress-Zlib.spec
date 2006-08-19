@@ -105,7 +105,6 @@ Compress::Zlib ¸ğµâÀº zlib ¾ĞÃà ¶óÀÌºê·¯¸®¿¡ Perl ÀÎÅÍÆäÀÌ½º¸¦
 ÀÌ ¸ğµâÀº ÀÏ¹İÀûÀ¸·Î ´ÙÀ½°ú °°Àº µÎ°¡Áö ±â´ÉÀ» Á¦°øÇÕ´Ï´Ù: ¸Ş¸ğ¸®
 ¾ĞÃà/ ¾ĞÃà ÇØÁ¦ ±â´É°ú gzip ÆÄÀÏ·ÎÀÇ ÀĞ±â/ ¾²±â Á¢±Ù ±â´É.
 
-
 %description -l pl
 Modu³ Compress::Zlib stanowi interfejs Perla do biblioteki zlib.
 Wiêkszo¶æ funkcji biblioteki zlib jest dostêpna poprzez
