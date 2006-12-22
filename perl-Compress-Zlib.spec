@@ -1,7 +1,7 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Compress
 %define		pnam	Zlib
@@ -22,17 +22,25 @@ Summary(tr):	Compress::Zlib - zlib s齥t齬ma kitapl齨a Perl aray鼁ler sa餷aya
 Summary(zh_CN):	Compress::Zlib - 提供到 zlib 压缩库的 Perl 界面的模块。
 Summary(zh_TW):	Compress::Zlib - 矗ㄑ Perl ざ倒 zlib 溃罽ㄧΑ畐家舱
 Name:		perl-Compress-Zlib
-Version:	1.42
-Release:	0.1
+Version:	2.001
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	1ab76bfd6731d80f6abbd1643c90cabd
+Source0:	http://www.cpan.org/modules/by-module/Compress/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	73816b5839a5e502efe3ee7951168ac1
 Patch0:		%{name}-paths.patch
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/Compress-Zlib/
+%if %{with tests}
+BuildRequires:	perl-Compress-Raw-Zlib
+BuildRequires:	perl-IO-Compress-Base
+BuildRequires:	perl-IO-Compress-Zlib
+BuildRequires:	perl-Scalar-List-Utils
+%endif
 BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	zlib-devel
+BuildRequires:	rpm-perlprov >= 4.1-13
+Requires:	perl-dirs >= 1.0-11
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -161,12 +169,12 @@ Compress::Zlib 家舱 zlib 溃罽ㄧΑ畐矗ㄑ Perl ざ パ zlib
 %setup -q -n %{pdir}-%{pnam}-%{version}
 %patch0 -p1
 
+rm -f examples/*.orig*
+
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-%{__make} \
-	OPTIMIZE="%{rpmcflags}"
-rm -f examples/*.orig*
+%{__make}
 
 %{?with_tests:%{__make} test}
 
@@ -184,11 +192,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README ANNOUNCE
-%{perl_vendorarch}/%{pdir}/%{pnam}.pm
-%dir %{perl_vendorarch}/auto/%{pdir}/%{pnam}
-%{perl_vendorarch}/auto/%{pdir}/%{pnam}/%{pnam}.bs
-%{perl_vendorarch}/auto/%{pdir}/%{pnam}/autosplit.ix
-%attr(755,root,root) %{perl_vendorarch}/auto/%{pdir}/%{pnam}/%{pnam}.so
-%{_mandir}/man3/*
+%doc Changes README
+%{perl_vendorlib}/Compress/Zlib.pm
+%dir %{perl_vendorlib}/auto/Compress/Zlib
+%{perl_vendorlib}/auto/Compress/Zlib/autosplit.ix
+%{_mandir}/man3/Compress::Zlib.3*
 %{_examplesdir}/%{name}-%{version}
