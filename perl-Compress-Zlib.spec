@@ -6,21 +6,21 @@
 %define		pdir	Compress
 %define		pnam	Zlib
 Summary:	Compress::Zlib - interface to zlib library
-Summary(cs):	Compress::Zlib - modul poskytující rozhraní Perlu ke komprimaèní knihovnì zlib
-Summary(da):	Compress::Zlib - et modul som giver Perl en grænseflade til komprimeringsbiblioteket zlib
-Summary(de):	Compress::Zlib - ein Modul mit Perl-Interfaces zur zlib Komprimier-Bibliothek
-Summary(es):	Compress::Zlib - módulo que proporciona las interfaces Perl para la librería de compresión
-Summary(fr):	Compress::Zlib - module fournissant une interface Perl à la bibliothèque de compression zlib
-Summary(it):	Compress::Zlib - modulo che fornisce interfacce di Perl alla libreria di compressione zlib
-Summary(ja):	Compress::Zlib - zlib°µ½Ì¥é¥¤¥Ö¥é¥ê¤ØPerl ¥¤¥ó¥¿¡¼¥Õ¥§¥¤¥¹¤òÄó¶¡¤¹¤ë¥â¥¸¥å¡¼¥ë¡£
-Summary(ko):	Compress::Zlib - zlib ¾ĞÃà ¶óÀÌºê·¯¸®·ÎÀÇ Perl ÀÎÅÍÆäÀÌ½º¸¦ Á¦°øÇÏ´Â ¸ğµâ
-Summary(pl):	Compress::Zlib - interfejs do biblioteki zlib
-Summary(pt):	Compress::Zlib - um módulo que oferece interfaces em Perl para a biblioteca de compressão zlib
-Summary(pt_BR):	Compress::Zlib - um módulo que oferece interfaces em Perl para a biblioteca de compressão zlib
-Summary(sv):	Compress::Zlib - en modul som ger Perl ett gränssnitt till komprimeringsbiblioteket zlib
-Summary(tr):	Compress::Zlib - zlib sıkıştırma kitaplığına Perl arayüzler sağlayan bir modül
-Summary(zh_CN):	Compress::Zlib - Ìá¹©µ½ zlib Ñ¹Ëõ¿âµÄ Perl ½çÃæµÄÄ£¿é¡£
-Summary(zh_TW):	Compress::Zlib - ´£¨Ñ Perl ¤¶­±µ¹ zlib À£ÁY¨ç¦¡®wªº¤@­Ó¼Ò²Õ¡C
+Summary(cs.UTF-8):   Compress::Zlib - modul poskytujÃ­cÃ­ rozhranÃ­ Perlu ke komprimaÄnÃ­ knihovnÄ› zlib
+Summary(da.UTF-8):   Compress::Zlib - et modul som giver Perl en grÃ¦nseflade til komprimeringsbiblioteket zlib
+Summary(de.UTF-8):   Compress::Zlib - ein Modul mit Perl-Interfaces zur zlib Komprimier-Bibliothek
+Summary(es.UTF-8):   Compress::Zlib - mÃ³dulo que proporciona las interfaces Perl para la librerÃ­a de compresiÃ³n
+Summary(fr.UTF-8):   Compress::Zlib - module fournissant une interface Perl Ã  la bibliothÃ¨que de compression zlib
+Summary(it.UTF-8):   Compress::Zlib - modulo che fornisce interfacce di Perl alla libreria di compressione zlib
+Summary(ja.UTF-8):   Compress::Zlib - zlibåœ§ç¸®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã¸Perl ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ã‚¤ã‚¹ã‚’æä¾›ã™ã‚‹ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã€‚
+Summary(ko.UTF-8):   Compress::Zlib - zlib ì••ì¶• ë¼ì´ë¸ŒëŸ¬ë¦¬ë¡œì˜ Perl ì¸í„°í˜ì´ìŠ¤ë¥¼ ì œê³µí•˜ëŠ” ëª¨ë“ˆ
+Summary(pl.UTF-8):   Compress::Zlib - interfejs do biblioteki zlib
+Summary(pt.UTF-8):   Compress::Zlib - um mÃ³dulo que oferece interfaces em Perl para a biblioteca de compressÃ£o zlib
+Summary(pt_BR.UTF-8):   Compress::Zlib - um mÃ³dulo que oferece interfaces em Perl para a biblioteca de compressÃ£o zlib
+Summary(sv.UTF-8):   Compress::Zlib - en modul som ger Perl ett grÃ¤nssnitt till komprimeringsbiblioteket zlib
+Summary(tr.UTF-8):   Compress::Zlib - zlib sÄ±kÄ±ÅŸtÄ±rma kitaplÄ±ÄŸÄ±na Perl arayÃ¼zler saÄŸlayan bir modÃ¼l
+Summary(zh_CN.UTF-8):   Compress::Zlib - æä¾›åˆ° zlib å‹ç¼©åº“çš„ Perl ç•Œé¢çš„æ¨¡å—ã€‚
+Summary(zh_TW.UTF-8):   Compress::Zlib - æä¾› Perl ä»‹é¢çµ¦ zlib å£“ç¸®å‡½å¼åº«çš„ä¸€å€‹æ¨¡çµ„ã€‚
 Name:		perl-Compress-Zlib
 Version:	2.001
 Release:	1
@@ -52,118 +52,118 @@ The module can be split into two general areas of functionality,
 namely in-memory compression/decompression and read/write access to
 gzip files.
 
-%description -l cs
-Modul Compress::Zlib poskytuje rozhraní ke komprimaèní knihovnì v
-Perlu. Vìt¹ina funkcí poskytovanıch zlib je k dispozici v
+%description -l cs.UTF-8
+Modul Compress::Zlib poskytuje rozhranÃ­ ke komprimaÄnÃ­ knihovnÄ› v
+Perlu. VÄ›tÅ¡ina funkcÃ­ poskytovanÃ½ch zlib je k dispozici v
 Compress::Zlib.
 
-Modul mù¾e bıt rozdìlen do dvou obecnıch oblastí funkènosti, konkrétnì
-do komprese/dekomprese v pamìti a do ètení/zápisu souborù gzip.
+Modul mÅ¯Å¾e bÃ½t rozdÄ›len do dvou obecnÃ½ch oblastÃ­ funkÄnosti, konkrÃ©tnÄ›
+do komprese/dekomprese v pamÄ›ti a do ÄtenÃ­/zÃ¡pisu souborÅ¯ gzip.
 
-%description -l da
-Modulet Compress::Zlib giver Perl en grænseflade til
+%description -l da.UTF-8
+Modulet Compress::Zlib giver Perl en grÃ¦nseflade til
 komprimeringsbiblioteket zlib. Det meste af funktionaliteten som
-zlibgiver er tilgængelig i Compress::Zlib.
+zlibgiver er tilgÃ¦ngelig i Compress::Zlib.
 
-Modulet kan deles i to generelle funktionsområder, nemlig
-komprimering/dekomprimering i hukommelsen og læsning/skrivning til
+Modulet kan deles i to generelle funktionsomrÃ¥der, nemlig
+komprimering/dekomprimering i hukommelsen og lÃ¦sning/skrivning til
 gzip-filer.
 
-%description -l de
-Das Compress::Zlib Modul enthält ein Perl-Interface zur zlib
+%description -l de.UTF-8
+Das Compress::Zlib Modul enthÃ¤lt ein Perl-Interface zur zlib
 Komprimier-Bibliothek. Die meisten Funktionen von zlib sind in
-Compress::Zlib verfügbar.
+Compress::Zlib verfÃ¼gbar.
 
 Das Modul kann in zwei allgemeine Funktionsbereiche aufgeteilt werden:
-Komprimieren/Dekomprimieren im Speicher und Lese-/Schreibzugriff für
+Komprimieren/Dekomprimieren im Speicher und Lese-/Schreibzugriff fÃ¼r
 gzip files.
 
-%description -l es
-El módulo Compress::Zlib proporciona una interfaz Perl para la
-librería de compresión zlib. La mayoría de la funcionalidad
-proporcionada por zlib está disponible en Compress::Zlib.
+%description -l es.UTF-8
+El mÃ³dulo Compress::Zlib proporciona una interfaz Perl para la
+librerÃ­a de compresiÃ³n zlib. La mayorÃ­a de la funcionalidad
+proporcionada por zlib estÃ¡ disponible en Compress::Zlib.
 
-El módulo puede separarse en dos áreas generales de funcionalidad,
-compresión/decompresión de memoria interna y acceso lectura/escritura
+El mÃ³dulo puede separarse en dos Ã¡reas generales de funcionalidad,
+compresiÃ³n/decompresiÃ³n de memoria interna y acceso lectura/escritura
 para los ficheros gzip.
 
-%description -l fr
+%description -l fr.UTF-8
 Le module Compress::Zlib fournit une interface Perl pour la
-bibliothèque de compression zlib. La plupart des fonctionnalités
+bibliothÃ¨que de compression zlib. La plupart des fonctionnalitÃ©s
 fournies par zlib est accessible dans Compress::Zlib.
 
-Le module peut être divisé en deux zones de fonctionnalité distinctes:
-compression/décompression dans la mémoire et accès en lecture/écriture
+Le module peut Ãªtre divisÃ© en deux zones de fonctionnalitÃ© distinctes:
+compression/dÃ©compression dans la mÃ©moire et accÃ¨s en lecture/Ã©criture
 aux fichiers gzip.
 
-%description -l it
+%description -l it.UTF-8
 Il modulo Compress::Zlib fornisce un'interfaccia Perl per la libreria
-di compressione zlib Gran parte delle funzionalità fornite da zlib è
+di compressione zlib Gran parte delle funzionalitÃ  fornite da zlib Ã¨
 disponibile in Compress::Zlib.
 
-Il modulo può essere diviso in due aree di funzionalità generali:
+Il modulo puÃ² essere diviso in due aree di funzionalitÃ  generali:
 compressione/decompressione nella memoria e accesso in lettura/
 scrittura ai file gzip.
 
-%description -l ko
-Compress::Zlib ¸ğµâÀº zlib ¾ĞÃà ¶óÀÌºê·¯¸®¿¡ Perl ÀÎÅÍÆäÀÌ½º¸¦
-Á¦°øÇÕ´Ï´Ù. Compress::ZlibÀº zlibÀÌ Á¦°øÇÏ´Â ´ëºÎºĞÀÇ ±â´ÉÀ» °®Ãß°í
-ÀÖ½À´Ï´Ù.
+%description -l ko.UTF-8
+Compress::Zlib ëª¨ë“ˆì€ zlib ì••ì¶• ë¼ì´ë¸ŒëŸ¬ë¦¬ì— Perl ì¸í„°í˜ì´ìŠ¤ë¥¼
+ì œê³µí•©ë‹ˆë‹¤. Compress::Zlibì€ zlibì´ ì œê³µí•˜ëŠ” ëŒ€ë¶€ë¶„ì˜ ê¸°ëŠ¥ì„ ê°–ì¶”ê³ 
+ìˆìŠµë‹ˆë‹¤.
 
-ÀÌ ¸ğµâÀº ÀÏ¹İÀûÀ¸·Î ´ÙÀ½°ú °°Àº µÎ°¡Áö ±â´ÉÀ» Á¦°øÇÕ´Ï´Ù: ¸Ş¸ğ¸®
-¾ĞÃà/ ¾ĞÃà ÇØÁ¦ ±â´É°ú gzip ÆÄÀÏ·ÎÀÇ ÀĞ±â/ ¾²±â Á¢±Ù ±â´É.
+ì´ ëª¨ë“ˆì€ ì¼ë°˜ì ìœ¼ë¡œ ë‹¤ìŒê³¼ ê°™ì€ ë‘ê°€ì§€ ê¸°ëŠ¥ì„ ì œê³µí•©ë‹ˆë‹¤: ë©”ëª¨ë¦¬
+ì••ì¶•/ ì••ì¶• í•´ì œ ê¸°ëŠ¥ê³¼ gzip íŒŒì¼ë¡œì˜ ì½ê¸°/ ì“°ê¸° ì ‘ê·¼ ê¸°ëŠ¥.
 
-%description -l pl
-Modu³ Compress::Zlib stanowi interfejs Perla do biblioteki zlib.
-Wiêkszo¶æ funkcji biblioteki zlib jest dostêpna poprzez
+%description -l pl.UTF-8
+ModuÅ‚ Compress::Zlib stanowi interfejs Perla do biblioteki zlib.
+WiÄ™kszoÅ›Ä‡ funkcji biblioteki zlib jest dostÄ™pna poprzez
 Compress::Zlib.
 
-Modu³ mo¿na podzieliæ funkcjonalnie na dwie zasadnicze czê¶ci: do
-kompresji/dekompresji w pamiêci oraz do dostêpu (odczyt i zapis) do
-plików skompresowanych gzipem.
+ModuÅ‚ moÅ¼na podzieliÄ‡ funkcjonalnie na dwie zasadnicze czÄ™Å›ci: do
+kompresji/dekompresji w pamiÄ™ci oraz do dostÄ™pu (odczyt i zapis) do
+plikÃ³w skompresowanych gzipem.
 
-%description -l pt
-O módulo Compress::Zlib oferece uma interface de Perl para a
-biblioteca de compressão zlib (veja o /AUTHOR para mais detalhes de
+%description -l pt.UTF-8
+O mÃ³dulo Compress::Zlib oferece uma interface de Perl para a
+biblioteca de compressÃ£o zlib (veja o /AUTHOR para mais detalhes de
 como obter a zlib). A maior parte da funcionalidade oferecida pela
-zlib está então disponível no Compress::Zlib.
+zlib estÃ¡ entÃ£o disponÃ­vel no Compress::Zlib.
 
-O módulo pode ser dividido em duas áreas de funcionalidade geral,
-nomeadamente na compressão/descompressão na memória e no acesso para
+O mÃ³dulo pode ser dividido em duas Ã¡reas de funcionalidade geral,
+nomeadamente na compressÃ£o/descompressÃ£o na memÃ³ria e no acesso para
 leitura/escrita nos ficheiros do 'gzip'.
 
-%description -l pt_BR
-O módulo Compress::Zlib oferece uma interface de Perl para a
-biblioteca de compressão zlib (veja o /AUTHOR para mais detalhes de
+%description -l pt_BR.UTF-8
+O mÃ³dulo Compress::Zlib oferece uma interface de Perl para a
+biblioteca de compressÃ£o zlib (veja o /AUTHOR para mais detalhes de
 como obter a zlib). A maior parte da funcionalidade oferecida pela
-zlib está então disponível no Compress::Zlib.
+zlib estÃ¡ entÃ£o disponÃ­vel no Compress::Zlib.
 
-O módulo pode ser dividido em duas áreas de funcionalidade geral,
-nomeadamente na compressão/descompressão na memória e no acesso para
+O mÃ³dulo pode ser dividido em duas Ã¡reas de funcionalidade geral,
+nomeadamente na compressÃ£o/descompressÃ£o na memÃ³ria e no acesso para
 leitura/escrita nos ficheiros do 'gzip'.
 
-%description -l sv
-Modulen Compress::Zlib ger Perl ett gränssnitt till
+%description -l sv.UTF-8
+Modulen Compress::Zlib ger Perl ett grÃ¤nssnitt till
 komprimeringsbiblioteket zlib. Det mesta av funktionaliteten som
-zlibger är åtkomlig i Compress::Zlib.
+zlibger Ã¤r Ã¥tkomlig i Compress::Zlib.
 
-Modulen kan delas i två allmänna funktionsområden, nämligen
-komprimering/dekomprimering i minnet och läsning/skrivning till
+Modulen kan delas i tvÃ¥ allmÃ¤nna funktionsomrÃ¥den, nÃ¤mligen
+komprimering/dekomprimering i minnet och lÃ¤sning/skrivning till
 gzip-filer.
 
-%description -l zh_CN
-Compress::Zlib Ä£¿éÌá¹©ÁËµ½ zlib Ñ¹Ëõ¿âµÄ Perl ½çÃæ zlib
-Ìá¹©µÄ¶àÊı¹¦ÄÜÔÚ Compress::Zlib ÖĞ¿ÉÓÃ¡£
+%description -l zh_CN.UTF-8
+Compress::Zlib æ¨¡å—æä¾›äº†åˆ° zlib å‹ç¼©åº“çš„ Perl ç•Œé¢ zlib
+æä¾›çš„å¤šæ•°åŠŸèƒ½åœ¨ Compress::Zlib ä¸­å¯ç”¨ã€‚
 
-¸ÃÄ£¿éµÄ¹¦ÄÜ¿ÉÒÔ±»·Ö³ÉÁ½Àà£¬¼´ÄÚ´æÄÚµÄÑ¹Ëõ/½âÑ¹ºÍ µ½ gzip
-ÎÄ¼şµÄ¶ÁĞ´·ÃÎÊ¡£
+è¯¥æ¨¡å—çš„åŠŸèƒ½å¯ä»¥è¢«åˆ†æˆä¸¤ç±»ï¼Œå³å†…å­˜å†…çš„å‹ç¼©/è§£å‹å’Œ åˆ° gzip
+æ–‡ä»¶çš„è¯»å†™è®¿é—®ã€‚
 
-%description -l zh_TW
-Compress::Zlib ¼Ò²Õ¬° zlib À£ÁY¨ç¦¡®w´£¨Ñ¤@­Ó Perl ªº¤¶­±¡C ¥Ñ zlib
-´£¨Ñªº¤j³¡¤À¥\¯à©Ê³£¥i¦b Compress::Zlib ¨ú±o¡C
+%description -l zh_TW.UTF-8
+Compress::Zlib æ¨¡çµ„ç‚º zlib å£“ç¸®å‡½å¼åº«æä¾›ä¸€å€‹ Perl çš„ä»‹é¢ã€‚ ç”± zlib
+æä¾›çš„å¤§éƒ¨åˆ†åŠŸèƒ½æ€§éƒ½å¯åœ¨ Compress::Zlib å–å¾—ã€‚
 
-³o­Ó¼Ò²Õ¥i¥H¤À³Î¬°¨â­Ó¤@¯ë¥\¯à©Êªº½d³ò¡A
-ºÙ¬°°O¾ĞÅé¤¤ªºÀ£ÁY»P¸ÑÀ£ÁY¡A¥H¤ÎÅª¼g¦s¨ú gzip ÀÉ®×¡C
+é€™å€‹æ¨¡çµ„å¯ä»¥åˆ†å‰²ç‚ºå…©å€‹ä¸€èˆ¬åŠŸèƒ½æ€§çš„ç¯„åœï¼Œ
+ç¨±ç‚ºè¨˜æ†¶é«”ä¸­çš„å£“ç¸®èˆ‡è§£å£“ç¸®ï¼Œä»¥åŠè®€å¯«å­˜å– gzip æª”æ¡ˆã€‚
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
