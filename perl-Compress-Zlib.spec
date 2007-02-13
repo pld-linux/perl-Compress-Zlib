@@ -6,21 +6,21 @@
 %define		pdir	Compress
 %define		pnam	Zlib
 Summary:	Compress::Zlib - interface to zlib library
-Summary(cs.UTF-8):   Compress::Zlib - modul poskytující rozhraní Perlu ke komprimační knihovně zlib
-Summary(da.UTF-8):   Compress::Zlib - et modul som giver Perl en grænseflade til komprimeringsbiblioteket zlib
-Summary(de.UTF-8):   Compress::Zlib - ein Modul mit Perl-Interfaces zur zlib Komprimier-Bibliothek
-Summary(es.UTF-8):   Compress::Zlib - módulo que proporciona las interfaces Perl para la librería de compresión
-Summary(fr.UTF-8):   Compress::Zlib - module fournissant une interface Perl à la bibliothèque de compression zlib
-Summary(it.UTF-8):   Compress::Zlib - modulo che fornisce interfacce di Perl alla libreria di compressione zlib
-Summary(ja.UTF-8):   Compress::Zlib - zlib圧縮ライブラリへPerl インターフェイスを提供するモジュール。
-Summary(ko.UTF-8):   Compress::Zlib - zlib 압축 라이브러리로의 Perl 인터페이스를 제공하는 모듈
-Summary(pl.UTF-8):   Compress::Zlib - interfejs do biblioteki zlib
-Summary(pt.UTF-8):   Compress::Zlib - um módulo que oferece interfaces em Perl para a biblioteca de compressão zlib
-Summary(pt_BR.UTF-8):   Compress::Zlib - um módulo que oferece interfaces em Perl para a biblioteca de compressão zlib
-Summary(sv.UTF-8):   Compress::Zlib - en modul som ger Perl ett gränssnitt till komprimeringsbiblioteket zlib
-Summary(tr.UTF-8):   Compress::Zlib - zlib sıkıştırma kitaplığına Perl arayüzler sağlayan bir modül
-Summary(zh_CN.UTF-8):   Compress::Zlib - 提供到 zlib 压缩库的 Perl 界面的模块。
-Summary(zh_TW.UTF-8):   Compress::Zlib - 提供 Perl 介面給 zlib 壓縮函式庫的一個模組。
+Summary(cs.UTF-8):	Compress::Zlib - modul poskytující rozhraní Perlu ke komprimační knihovně zlib
+Summary(da.UTF-8):	Compress::Zlib - et modul som giver Perl en grænseflade til komprimeringsbiblioteket zlib
+Summary(de.UTF-8):	Compress::Zlib - ein Modul mit Perl-Interfaces zur zlib Komprimier-Bibliothek
+Summary(es.UTF-8):	Compress::Zlib - módulo que proporciona las interfaces Perl para la librería de compresión
+Summary(fr.UTF-8):	Compress::Zlib - module fournissant une interface Perl à la bibliothèque de compression zlib
+Summary(it.UTF-8):	Compress::Zlib - modulo che fornisce interfacce di Perl alla libreria di compressione zlib
+Summary(ja.UTF-8):	Compress::Zlib - zlib圧縮ライブラリへPerl インターフェイスを提供するモジュール。
+Summary(ko.UTF-8):	Compress::Zlib - zlib 압축 라이브러리로의 Perl 인터페이스를 제공하는 모듈
+Summary(pl.UTF-8):	Compress::Zlib - interfejs do biblioteki zlib
+Summary(pt.UTF-8):	Compress::Zlib - um módulo que oferece interfaces em Perl para a biblioteca de compressão zlib
+Summary(pt_BR.UTF-8):	Compress::Zlib - um módulo que oferece interfaces em Perl para a biblioteca de compressão zlib
+Summary(sv.UTF-8):	Compress::Zlib - en modul som ger Perl ett gränssnitt till komprimeringsbiblioteket zlib
+Summary(tr.UTF-8):	Compress::Zlib - zlib sıkıştırma kitaplığına Perl arayüzler sağlayan bir modül
+Summary(zh_CN.UTF-8):	Compress::Zlib - 提供到 zlib 压缩库的 Perl 界面的模块。
+Summary(zh_TW.UTF-8):	Compress::Zlib - 提供 Perl 介面給 zlib 壓縮函式庫的一個模組。
 Name:		perl-Compress-Zlib
 Version:	2.001
 Release:	1
