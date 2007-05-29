@@ -32,9 +32,9 @@ Source0:	http://www.cpan.org/modules/by-module/Compress/%{pdir}-%{pnam}-%{versio
 Patch0:		%{name}-paths.patch
 URL:		http://search.cpan.org/dist/Compress-Zlib/
 %if %{with tests}
-BuildRequires:	perl-Compress-Raw-Zlib
-BuildRequires:	perl-IO-Compress-Base
-BuildRequires:	perl-IO-Compress-Zlib
+BuildRequires:	perl-Compress-Raw-Zlib >= %{version}
+BuildRequires:	perl-IO-Compress-Base >= %{version}
+BuildRequires:	perl-IO-Compress-Zlib >= %{version}
 BuildRequires:	perl-Scalar-List-Utils
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
