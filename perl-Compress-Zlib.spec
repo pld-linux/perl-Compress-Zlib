@@ -22,13 +22,13 @@ Summary(tr.UTF-8):	Compress::Zlib - zlib sıkıştırma kitaplığına Perl aray
 Summary(zh_CN.UTF-8):	Compress::Zlib - 提供到 zlib 压缩库的 Perl 界面的模块。
 Summary(zh_TW.UTF-8):	Compress::Zlib - 提供 Perl 介面給 zlib 壓縮函式庫的一個模組。
 Name:		perl-Compress-Zlib
-Version:	2.001
+Version:	2.004
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Compress/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	73816b5839a5e502efe3ee7951168ac1
+# Source0-md5:	ea7837294a3a434c1266c7e9862c4360
 Patch0:		%{name}-paths.patch
 URL:		http://search.cpan.org/dist/Compress-Zlib/
 %if %{with tests}
