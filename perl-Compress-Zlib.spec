@@ -23,7 +23,7 @@ Summary(zh_CN.UTF-8):	Compress::Zlib - 提供到 zlib 压缩库的 Perl 界面�
 Summary(zh_TW.UTF-8):	Compress::Zlib - 提供 Perl 介面給 zlib 壓縮函式庫的一個模組。
 Name:		perl-Compress-Zlib
 Version:	2.008
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
