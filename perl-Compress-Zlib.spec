@@ -173,7 +173,8 @@ rm -f examples/*.orig*
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor
+	INSTALLDIRS=vendor \
+	INST_LIB=blib/lib
 %{__make}
 
 %{?with_tests:%{__make} test}
